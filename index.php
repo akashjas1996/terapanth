@@ -52,8 +52,10 @@
 
         <!--Grid column-->
         <div class="col-lg-3 mb-4 mb-lg-0 d-flex align-items-center justify-content-center">
-
-          <img src="img/user_image.png" class="img-fluid" alt="">
+          <?php 
+            $user_id = $row_users['user_id'];
+          ?>
+          <img src="img/users/<?php echo $user_id; ?>.jpg" class="img-fluid" alt="">
 
         </div>
         <!--Grid column-->
@@ -71,7 +73,7 @@
             &nbsp; &nbsp;<?php echo $row_users['phone2'] ?></p>
           <p></p>
 
-          <a class="font-weight-bold" href="#" >Detailed View<i class="fas fa-angle-right ml-2"></i></a>
+          <a class="font-weight-bold" href="profile.php?id=<?php echo $user_id ?>" >Detailed View<i class="fas fa-angle-right ml-2"></i></a>
 
         </div>
         <!--Grid column-->
