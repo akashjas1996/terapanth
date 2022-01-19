@@ -55,7 +55,7 @@
           <?php 
             $user_id = $row_users['user_id'];
           ?>
-          <img src="img/users/<?php echo $user_id; ?>.jpg" class="img-fluid" alt="">
+          <img style="max-height:100px " src="img/users/<?php echo $user_id; ?>.jpg" class="img-fluid" alt="">
 
         </div>
         <!--Grid column-->
